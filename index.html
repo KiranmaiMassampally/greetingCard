@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promise Day</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Make sure the body takes full viewport height */
+      background-color: #0f010a;
+      margin: 0;
+      position: relative;
+    }
+
+    .center-gif {
+      width: 100%; /* Fill the width of the screen */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 70%; /* Slight padding from edges */
+      max-height:70vh; /* Limit the height to fit the viewport */
+    }
+
+    .center-button {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 25px 40px;
+      background-color: #f1a5ba;
+      color: rgb(158, 12, 48);
+      border: none;
+      border-radius: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+    }
+
+    .center-button:hover {
+      background-color: #f0e9ed;
+    }
+  </style>
+</head>
+<body>
+
+<img src="mainpage.gif" alt="Promise Day GIF" class="center-gif">
+<button class="center-button" onclick="goToSecondPage()">Click Me</button>
+
+<script>
+  function goToSecondPage() {
+    window.location.href = "second_page.html";
+  }
+</script>
+
+</body>
+</html>
